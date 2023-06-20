@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 
 function AboutPage() {
-  const handleImageClick = () => {
+  const handleBackClick = () => {
     router.push("/");
   };
 
@@ -13,7 +13,7 @@ function AboutPage() {
   return (
     <>
       <div className="aboutContent">
-        <h1>Instructions</h1>
+        <h1>How it works</h1>
         <div className="aboutMove">
           <h3>Choose your moves!</h3>
           <p className="highlight">
@@ -38,9 +38,8 @@ function AboutPage() {
           </p>
           <div className="dottedLine"></div>
           <p>
-            If you are a <strong>righty</strong>, by default, blue is used for
-            moves that use the left side of your body and red for your right
-            side.
+            By default, blue is used for moves with your dominant hand (the one you use for JAB) and
+            red with your less dominant hand (the one you use for CROSS).
           </p>
           <p>In a nutshell:</p>
           <div className="handed">
@@ -75,13 +74,8 @@ function AboutPage() {
             challenge routine a total of 8 times in 2 minutes!{" "}
           </p>
         </div>
-        <div className="aboutLogo" onClick={handleImageClick}>
-          <Image
-            src="/box-back.png"
-            alt="box box logo"
-            width={100}
-            height={100}
-          />
+        <div className="backButton">
+          <button onClick={handleBackClick}>Back</button>
         </div>
       </div>
     </>
