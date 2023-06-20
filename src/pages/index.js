@@ -9,6 +9,14 @@ function HomePage() {
     router.push("/challenge.js");
   };
 
+  const handleCreateChallengeClick = () => {
+    router.push("/challenge");
+  };
+
+  const handleInstructionsClick = () => {
+    router.push("/about");
+  };
+
   return (
     <>
       <Head>
@@ -27,6 +35,11 @@ function HomePage() {
         </div>
         <div className="image-logo" onClick={handleImageClick}>
           <Image src="/box.png" alt="box box logo" width={300} height={300} />
+        </div>
+
+        <div className="landingButtons">
+          <button onClick={handleInstructionsClick}>How it works</button>
+          <button onClick={handleCreateChallengeClick}>Create challenge</button>
         </div>
       </div>
     </>

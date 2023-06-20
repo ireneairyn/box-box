@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }) {
     <>
       {!hideBackground && <div className="background"></div>}
       <div className="wrapper">
-        <div className="topLinks">
+        {/* <div className="topLinks">
           <a
             href="https://github.com/ireneairyn/box-box"
             className="logo-link"
@@ -31,7 +31,7 @@ export default function App({ Component, pageProps }) {
           >
             🥊
           </a>
-        </div>
+        </div> */}
         <Component {...pageProps} />
       </div>
     </>

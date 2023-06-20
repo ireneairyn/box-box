@@ -75,13 +75,23 @@ a {
   margin-top: 10px;
 }
 
+.highlight {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.aboutContent {
+margin-top: 50px;
+}
+
 .aboutMove,
 .aboutColour,
 .aboutPlay {
-  background-color: rgb(159, 36, 73);
+  background-color: rgb(159, 36, 73, 0.9);
   margin: 20px;
   padding: 10px;
   border-radius: 15px;
+  ;
 }
 
 .aboutContent h1 {
@@ -94,7 +104,12 @@ a {
 .aboutContent h3 {
   font-family: "League Spartan", sans-serif;
   color: white;
+  text-decoration: underline;
   font-size: 25px;
+  margin: 10px 0 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .aboutContent p {
@@ -102,11 +117,41 @@ a {
   margin: 10px 0 10px 0;
   font-size: 20px;
   color: white;
-  word-spacing: 4px;
+  word-spacing: 2px;
 }
 
 .aboutLogo {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dottedLine {
+  border-bottom: 1px dotted white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.handed {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  font-size: 25px;
+  font-family: "League Spartan", sans-serif;
+  color: white;
+  background-color: transparent;
+  border-radius: 25px;
+  border: white solid 2px;
+  padding: 10px 15px 10px 15px;
+  margin: 15px 5px 5px 5px;
+  cursor: pointer;
+}
+
+.landingButtons {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
