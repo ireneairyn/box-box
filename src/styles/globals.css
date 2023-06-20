@@ -1,13 +1,9 @@
 :root {
   --background-color: rgb(0, 0, 0);
   --text-color: #ffffff;
-  --header-font: 'League Spartan', sans-serif;
+  --header-font: "League Spartan", sans-serif;
 
-  --content-font: "Caveat Brush", cursive;
-}
-
-* {
-  box-sizing: border-box;
+  --content-font: "League Spartan", sans-serif;
 }
 
 body {
@@ -17,6 +13,7 @@ body {
   height: 100%;
   width: 100%;
   background-color: black;
+  color: white;
 }
 * {
   box-sizing: border-box;
@@ -24,7 +21,7 @@ body {
   margin: 0;
 }
 main {
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
 }
 
 html,
@@ -38,4 +35,129 @@ a {
   text-decoration: none;
 }
 
+.wrapper {
+  width: 100%;
+  padding-bottom: 50px;
+}
 
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+  background-image: url("/mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: bottom;
+}
+
+.topLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.emoji-link,
+.logo-link {
+  font-size: 30px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.aboutMove,
+.aboutColour,
+.aboutPlay {
+  background-color: rgb(159, 36, 73);
+  margin: 20px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.aboutContent h1 {
+  font-family: "League Spartan", sans-serif;
+  color: white;
+  font-size: 50px;
+  margin: 20px;
+}
+
+.aboutContent h3 {
+  font-family: "League Spartan", sans-serif;
+  color: white;
+  font-size: 25px;
+}
+
+.aboutContent p {
+  font-family: "League Spartan", sans-serif;
+  margin: 10px 0 10px 0;
+  font-size: 20px;
+  color: white;
+  word-spacing: 4px;
+}
+
+.aboutLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Desktop stuff */
+@media (min-width: 768px) {
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    background-image: url("/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: bottom;
+  }
+
+  .emoji-link:hover,
+  .logo-link:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .image-logo,
+  .title-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .image-logo img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .image-logo,
+  .title-logo p {
+    font-size: 40px;
+    font-weight: normal;
+    color: var(--text-color);
+    font-family: var(--content-font);
+    text-align: center;
+    margin: 0;
+  }
+
+  .image-logo:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+  }
+}
