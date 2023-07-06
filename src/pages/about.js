@@ -21,13 +21,17 @@ function AboutPage() {
           </p>
           <div className="dottedLine"></div>
           <p>
-            Each round has 8 moves. You can choose from the most common ones:
-            JAB, CROSS, HOOK, UPPER, ELBOW, LOW kick, MIDDLE kick, SLIP, WEAVE
-            and STEP
+            Each round has 8 moves. 
           </p>
 
+          <p>You can choose from the ones you will find in every challenge:
+            JAB, CROSS, HOOK and UPPER</p>
+
+            <p>Some other common moves: ELBOW, LOW kick, MIDDLE kick, SLIP, WEAVE
+            and STEP</p>
+
           <p>
-            Or some of the least common moves: rock BACK, FRONT kick, back KICK.
+            And some of the less common ones: rock BACK, FRONT kick, back KICK.
           </p>
         </div>
 

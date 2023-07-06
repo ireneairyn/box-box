@@ -7,13 +7,26 @@ function AboutPage() {
   const handleBackClick = () => {
     router.push("/");
   };
+  const handleImageClick = () => {
+    router.push("/");
+  };
 
   const router = useRouter();
 
   return (
     <>
-      <div className="challengeContent">
-        <h1>Challenge</h1>
+      <div className="errorContent">
+        <h1>ERROR!</h1>
+        <h2>Sorry, wrong box!</h2>
+
+        <div className="errorBox" onClick={handleImageClick}>
+          <Image
+            src="/box-404.png"
+            alt="box error"
+            width={400}
+            height={400}
+          />
+        </div>
         <div className="backButton">
           <button onClick={handleBackClick}>Back</button>
         </div>

@@ -80,7 +80,7 @@ a {
   font-style: italic;
 }
 
-.aboutContent {
+.aboutContent, .errorBox {
 margin-top: 50px;
 }
 
@@ -118,6 +118,8 @@ margin-top: 50px;
   font-size: 20px;
   color: white;
   word-spacing: 2px;
+  line-height: 1.1;
+
 }
 
 .aboutLogo {
@@ -156,6 +158,18 @@ button {
   align-items: center;
   justify-content: center;
 }
+
+.errorContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 86vh;
+  text-align: center;
+  font-family: "League Spartan", sans-serif;
+  font-size: 20px;
+}
+
 
 /* Desktop stuff */
 @media (min-width: 768px) {
